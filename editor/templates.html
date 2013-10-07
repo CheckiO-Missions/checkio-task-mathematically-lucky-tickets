@@ -9,22 +9,13 @@
 
 <script type="text/template" id="template_tryit">
     <div class="tryit-content center-exp">
-        <table class="tool">
-            <tr>
-                <td>
-                    <input type="text" value="test">
-                </td>
-                <td>
-                    <button class="bn-check btn">Action</button>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="checkio-result">
-                    Result:<br>
-                    <span class="checkio-result-in">&nbsp;</span>
-                </td>
-            </tr>
+        <div class="tooltip">Enter ticket's number:</div>
+        <input type="text" class="ticket-input" name="ticket-input" value="000000" maxlength="6">
+        <button type="button" class="bn-check btn" value="Check">Check</button>
 
-        </table>
+        <div class="checkio-result">
+            <span class="checkio-result-in">&nbsp;</span>
+        </div>
+
     </div>
 </script>
