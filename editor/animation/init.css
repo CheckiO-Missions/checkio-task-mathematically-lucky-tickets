@@ -131,7 +131,7 @@ fieldset[disabled] .btn {
 .tryit-content input[type="number"]
 {
     display: inline-block;
-    padding: 4px 6px;
+    padding: 2px 6px;
     font-size: 14px;
     line-height: 1.428571429;
     font-family: inherit;
