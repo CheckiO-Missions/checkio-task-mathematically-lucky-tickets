@@ -84,11 +84,20 @@
     <p>
         <strong>Example:</strong>
     </p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">luckyTickets('000000') == true
+luckyTickets('707409') == true
+luckyTickets('595347') == false
+luckyTickets('271353') == false
+luckyTickets('000955') == false
+</pre>
+{% else %}
 <pre class="brush: python">checkio('000000') == True
 checkio('707409') == True
 checkio('595347') == False
-checkio('271353') == False</pre>
-</div>
+checkio('271353') == False
+</pre>
+{% endif %}
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
