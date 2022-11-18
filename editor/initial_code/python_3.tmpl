@@ -7,12 +7,12 @@ def checkio(value: str) -> bool:
     return True
 {% endblock start %}
 
-# These "asserts" are used for self-checking
 {% block example %}
 print('Example:')
 print(checkio('000000'))
 {% endblock %}
 
+# These "asserts" are used for self-checking
 {% block tests %}
 {% for t in tests %}
 assert {% block call %}checkio({{t.input|p_args}}){% endblock %} == {% block result %}{{t.answer|p}}{% endblock %}{% endfor %}
